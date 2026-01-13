@@ -1,0 +1,554 @@
+2026-01-13 | 9528bea | Fix footer links for static pages (#71)
+2026-01-13 | f9eea2f | Fix landing privacy and terms links (#70)
+2026-01-10 | fc23754 | chore(landing): trigger S3 deploy (#69)
+2026-01-10 | 1207523 | chore(landing): deploy to S3 via GitHub OIDC (#68)
+2026-01-10 | fcf57fb | Add static landing bundle and document Option C (#67)
+2026-01-10 | db51f47 | Document canonical domain and URLs (#66)
+2026-01-10 | a57d24b | Mark INFRA-01 as complete in backlog (#65)
+2026-01-10 | d64fab3 | Reorder P3 infrastructure backlog tasks (#64)
+2026-01-09 | df7191f | Saved progress at the end of the loop
+2026-01-09 | 82d92f9 | Centralize database connection pool across the application
+2026-01-09 | c1e6a33 | Transitioned from Plan to Build mode
+2026-01-09 | 0815ee0 | Transitioned from Plan to Build mode
+2026-01-09 | f9d778f | Add local OIDC stub and Playwright E2E harness for network-limited environments (#63)
+2026-01-08 | 37272a8 | Update
+2026-01-08 | 1955264 | Update tenant hardening programme docs (#62)
+2026-01-08 | 40c0173 | Tenant isolation test hardening (TST-01–TST-06) (#61)
+2026-01-08 | 22f42a1 | Tenant isolation hardening: enforcement, CI gates, docs, and type safety (#60)
+2026-01-07 | 4857a3f | Docs: reconcile FE-01..FE-05 status, fix test registry IDs, and update repo map (#59)
+2026-01-07 | dded91d | P2 PIPE-01–06: pipeline tenant isolation enforcement + org error telemetry (#58)
+2026-01-07 | 7191d60 | P2 PIPE-01–03: chat ingress, resolver/hydration, and executor org enforcement (#57)
+2026-01-07 | 8310611 | P2 tenant hardening complete: backend org isolation (BE-01–BE-06) + docs reconciliation (#56)
+2026-01-05 | a3af54a | Update
+2026-01-05 | 2627259 | Saved progress at the end of the loop
+2026-01-05 | 8b56a1c | Add database constraints and indexes to improve data integrity
+2026-01-05 | 56db94c | Update documentation to note database constraint prerequisite
+2026-01-05 | d012a8a | Transitioned from Plan to Build mode
+2026-01-05 | 6eeea8c | Update documentation to reflect test script path scoping change
+2026-01-05 | 595fe22 | Saved progress at the end of the loop
+2026-01-05 | cba40b5 | Update project organization and enforce data integrity for all projects
+2026-01-05 | 399ff1d | Transitioned from Plan to Build mode
+2026-01-05 | 82be487 | Document tenant isolation posture in context capsule and repo map (#55)
+2026-01-04 | b886dfd | Transitioned from Plan to Build mode
+2026-01-04 | ea658bc | P1 readiness: landing + auth entry, beta billing controls, internal dashboard, security hardening, and latency instrumentation (#52)
+2026-01-04 | 8d5c702 | Minor update
+2026-01-03 | 6d3f69e | Stabilisation P0: settings routing, chat scroll, threaded comments, and verification (#51)
+2026-01-03 | e11bb46 | Minor changes
+2026-01-02 | 7b933a2 | Add execution backlog document (#50)
+2026-01-02 | 72ddf69 | Fix resolver typo tolerance and raise ambiguous option cap; add contract tests (#49)
+2025-12-31 | bfb0d80 | Saved progress at the end of the loop
+2025-12-31 | 27e31bf | Add project documentation and repository map to docs folder
+2025-12-31 | 6fa46a1 | Transitioned from Plan to Build mode
+2025-12-30 | b600ee7 | Restructure layout to isolate full-height chat sidebar (#46)
+2025-12-30 | 45a5126 | Document routing, chat navigation, and pagination contracts (#45)
+2025-12-28 | 7c102ab | Saved progress at the end of the loop
+2025-12-28 | dbcf4ac | Streamline navigation and remove redundant workarounds
+2025-12-28 | 636ffb5 | Integrate custom location hook to improve URL query parameter handling
+2025-12-28 | 8c661f5 | Add custom location hook to include query parameters for navigation
+2025-12-28 | 7d59336 | Transitioned from Plan to Build mode
+2025-12-28 | 7d0e97b | Improve navigation and task updates for a smoother user experience
+2025-12-28 | a56a1f0 | Transitioned from Plan to Build mode
+2025-12-28 | 612b457 | Saved progress at the end of the loop
+2025-12-28 | e2f9e64 | Add deterministic pagination handling to the chat interface
+2025-12-27 | 5919d22 | Add UI context to API calls for better task management
+2025-12-27 | 811b6f6 | Add deterministic pagination handling to the project interface
+2025-12-27 | 0c33b97 | Add UI context to the chat pipeline for improved task management
+2025-12-27 | 55da0a1 | Transitioned from Plan to Build mode
+2025-12-27 | 4f363f7 | Clarify ordinal pagination handling (#44)
+2025-12-27 | b2ebaf8 | Ensure date params serialize deterministically (#43)
+2025-12-27 | 81cf3a0 | Log automated QA test run (#42)
+2025-12-27 | 3c005f4 | Sync pagination with URL and stop polling (#41)
+2025-12-27 | a8b73bf | Enable server-side filtering with paginated responses (#40)
+2025-12-27 | f419ae8 | Fix TypeScript pagination typings (#39)
+2025-12-26 | 54c1ae4 | Clarify blast radius snapshot for MainAgent copy (#38)
+2025-12-26 | ce52763 | Keep meeting responses neutral about join links (#37)
+2025-12-26 | f3bcc37 | Ensure Replit dev run uses debug logging (#36)
+2025-12-26 | b36a716 | Add documentation catalogue to replit (#35)
+2025-12-26 | 0f48abc | Fix chat capability typings for executor and planner (#34)
+2025-12-24 | 6b0717d | Allow Ask Why suggestions to wrap (#33)
+2025-12-22 | 69e20b5 | Fix TaskDetailPanel scroll area overflow (#32)
+2025-12-22 | 4df4fc5 | Add TaskDetailPanel width guardrail (#31)
+2025-12-22 | daa78ff | Adjust task detail scroll content width (#30)
+2025-12-22 | 7b666b3 | Prevent TaskDetailPanel overflow for long text (#29)
+2025-12-22 | 8fd6351 | Prevent TaskDetailPanel overflow (#28)
+2025-12-22 | f40ac5c | Conduct a comprehensive diagnosis of task detail panel for overflow issues
+2025-12-22 | aa9da6f | Fix TaskDetailPanel scroll area width (#27)
+2025-12-22 | 95f9ca3 | Hide horizontal overflow in task detail panel (#26)
+2025-12-22 | 0a08cca | Fix task detail panel scroll shrink (#25)
+2025-12-22 | b889a2c | Move task details drawer to left (#24)
+2025-12-22 | ac9e2cf | Revert "Move task details panel into project layout (#22)" (#23)
+2025-12-22 | 22a2df6 | Move task details panel into project layout (#22)
+2025-12-22 | 792915c | Log chat layout changes in testing docs (#21)
+2025-12-22 | d3ad1f9 | Prevent chat bubble overflow in flex row (#20)
+2025-12-22 | f416fc6 | Fix chat word wrapping (#19)
+2025-12-22 | 6efbfca | Prevent chat message overflow on long strings (#18)
+2025-12-22 | 886409b | Require organisationId for completion requests (#17)
+2025-12-21 | b45ca85 | Normalize integration nulls and PayFast signature data (#16)
+2025-12-21 | 91b88fe | Align usage summary add-on fields (#15)
+2025-12-20 | fadfb89 | Add process guardrails doc, blast-radius discipline, and initial regression coverage (#14)
+2025-12-19 | 377a04b | Add testing blast radius map and registry guidance (#13)
+2025-12-19 | 39a5973 | Saved progress at the end of the loop
+2025-12-19 | ddfb68e | Add specific host allowlisting for OneDrive redirects
+2025-12-19 | fae9729 | Transitioned from Plan to Build mode
+2025-12-19 | cf570ee | Saved progress at the end of the loop
+2025-12-19 | c904056 | Improve error reporting for disallowed hostnames during URL validation
+2025-12-19 | eb3ed36 | Transitioned from Plan to Build mode
+2025-12-19 | 02acf8e | Saved progress at the end of the loop
+2025-12-19 | e85888d | Adjust redirect limits for file-sharing services to prevent unfurl failures
+2025-12-19 | b67c85c | Adjust redirect limits for better link unfurling
+2025-12-19 | f18172d | Transitioned from Plan to Build mode
+2025-12-19 | 401854e | Saved progress at the end of the loop
+2025-12-19 | 8680db1 | Add ability to refresh attachment metadata and fix cache invalidation logic
+2025-12-19 | 4b9fdc7 | Transitioned from Plan to Build mode
+2025-12-19 | 04c5068 | Saved progress at the end of the loop
+2025-12-19 | ff3feab | Add endpoints to refresh external resource metadata for tasks and projects
+2025-12-19 | 6c73d80 | Transitioned from Plan to Build mode
+2025-12-19 | 6c8aaae | Saved progress at the end of the loop
+2025-12-19 | 33a806f | Improve link unfurling and project update tracking
+2025-12-19 | 122638f | Transitioned from Plan to Build mode
+2025-12-19 | a3317d5 | Add guard to prevent double link unfurling (#12)
+2025-12-19 | 75aa048 | Record voice transcription usage (#11)
+2025-12-19 | 6bbc3ca | Saved progress at the end of the loop
+2025-12-19 | 1edc473 | Improve voice input handling and message submission
+2025-12-19 | 4713999 | Transitioned from Plan to Build mode
+2025-12-19 | 6069498 | Saved progress at the end of the loop
+2025-12-19 | d450db0 | Improve audio transcription error handling and logging
+2025-12-19 | 69a36d9 | Transitioned from Plan to Build mode
+2025-12-19 | 80102b3 | Add voice transcription pathway (#10)
+2025-12-18 | 6cfd070 | Saved progress at the end of the loop
+2025-12-18 | 04f6374 | Improve chat interface highlighting and component logic
+2025-12-18 | d42df48 | Transitioned from Plan to Build mode
+2025-12-18 | 8a87e75 | Unclip chat panel highlight (#9)
+2025-12-18 | 587ab2b | Add panel-wide highlight for injected chat messages (#8)
+2025-12-18 | 5c7e18f | Restore injected chat message highlight (#7)
+2025-12-18 | 9d833ae | Saved progress at the end of the loop
+2025-12-18 | ea3e902 | Improve chat rendering for markdown links and URL wrapping
+2025-12-18 | c062756 | Add markdown rendering and URL wrapping to chat messages
+2025-12-18 | 6d3e571 | Transitioned from Plan to Build mode
+2025-12-18 | 53246e7 | Add markdown chat renderer with safe wrapping (#6)
+2025-12-17 | d08c516 | Saved progress at the end of the loop
+2025-12-17 | c3653d0 | Propagate project context after explicit navigation to ensure consistency
+2025-12-17 | 7ddec56 | Transitioned from Plan to Build mode
+2025-12-17 | 6bea8d7 | Saved progress at the end of the loop
+2025-12-17 | a4da097 | Add specific clarification messages for project and task-related actions
+2025-12-17 | cd02a1a | Transitioned from Plan to Build mode
+2025-12-17 | 4088af1 | Saved progress at the end of the loop
+2025-12-17 | f52c2b3 | Update file attachments to refresh after project changes
+2025-12-17 | 7905e71 | Resolve attachment steps to current project context (#5)
+2025-12-17 | a702f01 | Handle chat link attachments without storage (#4)
+2025-12-17 | 1aadb99 | Add paste-link option to attachments (#3)
+2025-12-16 | 4bce34a | Saved progress at the end of the loop
+2025-12-16 | 7d5ecdc | Improve modal scrolling and visual appearance for better user experience
+2025-12-16 | 2f4c5ad | Transitioned from Plan to Build mode
+2025-12-16 | 0017039 | Saved progress at the end of the loop
+2025-12-16 | f703834 | Improve scrolling behavior in the file picker modal
+2025-12-16 | 99acfe9 | Transitioned from Plan to Build mode
+2025-12-16 | d8074db | Transitioned from Plan to Build mode
+2025-12-16 | a76a882 | Saved progress at the end of the loop
+2025-12-16 | ddd3c01 | Improve file picker modal scrolling and display functionality
+2025-12-16 | adfd679 | Transitioned from Plan to Build mode
+2025-12-16 | 6a06629 | Saved progress at the end of the loop
+2025-12-16 | 1f335d1 | Fix attachment button visibility by correcting connection status check
+2025-12-16 | 95a8cf0 | Transitioned from Plan to Build mode
+2025-12-16 | 61e25dc | Saved progress at the end of the loop
+2025-12-16 | c14c10f | Add alias for Google OAuth callback to handle existing redirect URIs
+2025-12-16 | 5ed0ac3 | Transitioned from Plan to Build mode
+2025-12-16 | efdc4a4 | Saved progress at the end of the loop
+2025-12-16 | 7f69bf9 | Improve security and fix task attachment access rules
+2025-12-16 | 18936ea | Transitioned from Plan to Build mode
+2025-12-16 | 167eb19 | Improve task attachment access control and display
+2025-12-16 | 05d35d4 | Update file attachment functionality to support project-level resources
+2025-12-16 | 3ac719a | Add project and task attachments to the project view
+2025-12-16 | ad898a5 | Transitioned from Plan to Build mode
+2025-12-16 | 1870766 | Saved progress at the end of the loop
+2025-12-16 | bd4f9d6 | Add ability to attach files from cloud storage to tasks and projects
+2025-12-16 | e405c9a | Transitioned from Plan to Build mode
+2025-12-16 | 0b1b422 | Saved progress at the end of the loop
+2025-12-16 | e44ec33 | Prioritize message interpretation over new topic detection in clarifications
+2025-12-16 | ce1f18e | Transitioned from Plan to Build mode
+2025-12-16 | 41ed6fb | Saved progress at the end of the loop
+2025-12-16 | 3bc24cd | Update redirect URI generation for OAuth integrations
+2025-12-16 | ad95538 | Transitioned from Plan to Build mode
+2025-12-16 | 5841496 | Saved progress at the end of the loop
+2025-12-16 | 6b95977 | Improve Google OAuth handling and logging for integrations
+2025-12-16 | adc0ebe | Transitioned from Plan to Build mode
+2025-12-16 | 95d9e55 | Saved progress at the end of the loop
+2025-12-16 | 6e48652 | Add validation and logging for Google integration authentication URLs
+2025-12-16 | 24d3a2f | Transitioned from Plan to Build mode
+2025-12-16 | f80198c | Saved progress at the end of the loop
+2025-12-16 | e9be04a | Update default user role for unassigned members
+2025-12-16 | 18acadd | Transitioned from Plan to Build mode
+2025-12-16 | 0d62e8b | Saved progress at the end of the loop
+2025-12-16 | e7974e5 | Update user authentication and cache clearing for improved reliability
+2025-12-16 | e68cf56 | Transitioned from Plan to Build mode
+2025-12-16 | f225f2f | Saved progress at the end of the loop
+2025-12-16 | 41dd7e3 | Add user profile dropdown with login and logout functionality
+2025-12-16 | 5d74cbd | Transitioned from Plan to Build mode
+2025-12-15 | 77760b2 | Saved progress at the end of the loop
+2025-12-15 | 3507f23 | Implement core data storage and logging functionalities for the project
+2025-12-15 | 1fe96e0 | Transitioned from Plan to Build mode
+2025-12-15 | 9a63ccd | Saved progress at the end of the loop
+2025-12-15 | 33f669e | Fix integration connection handling and improve chat continuity
+2025-12-15 | 24de42a | Transitioned from Plan to Build mode
+2025-12-15 | 2784e9c | Saved progress at the end of the loop
+2025-12-15 | b69ab65 | Expand integration options and improve error handling for external services
+2025-12-15 | a503f86 | Transitioned from Plan to Build mode
+2025-12-15 | 2c07728 | Add structured logging and investigate task creation failures
+2025-12-15 | e122612 | Add structured logging to classify commands and resolve entities
+2025-12-15 | 0d8ba1b | Transitioned from Plan to Build mode
+2025-12-13 | 6b2b5d8 | Saved progress at the end of the loop
+2025-12-13 | 2c35680 | Update QA report to reflect partial fix for task approval workflow
+2025-12-13 | 7fab896 | Fix issues with task approvals and project creation
+2025-12-13 | ec50cf5 | Transitioned from Plan to Build mode
+2025-12-13 | db0c9be | Transitioned from Plan to Build mode
+2025-12-13 | 6cdb15e | Saved progress at the end of the loop
+2025-12-13 | 6089f30 | Improve database delete operations for accuracy and reliability
+2025-12-13 | 36602ca | Add database storage for billing and user-related information
+2025-12-13 | 465f55d | Transitioned from Plan to Build mode
+2025-12-13 | 8e9170e | Transitioned from Plan to Build mode
+2025-12-13 | 3e0a129 | Saved progress at the end of the loop
+2025-12-13 | 52ed57c | Improve clarity for billing and automation creation commands
+2025-12-13 | dbfbcf0 | Transitioned from Plan to Build mode
+2025-12-13 | fea1e34 | Saved progress at the end of the loop
+2025-12-13 | 7635131 | Add clarification handler and settings management for AI chat
+2025-12-13 | ab3332c | Transitioned from Plan to Build mode
+2025-12-12 | b97dc16 | Document critical bugs found during application testing
+2025-12-12 | d652287 | Transitioned from Plan to Build mode
+2025-12-12 | 958bf84 | Add database connection and integration for persistent storage
+2025-12-11 | c88dc57 | Saved progress at the end of the loop
+2025-12-11 | 8f8a804 | Add conversational settings management and update UI
+2025-12-11 | 1269303 | Transitioned from Plan to Build mode
+2025-12-11 | 5f9bb7b | Saved progress at the end of the loop
+2025-12-11 | cc380e4 | Enforce organization-specific billing and entitlement data retrieval
+2025-12-11 | 8919c47 | Add billing and usage tracking for organization accounts
+2025-12-11 | 7c4dd74 | Transitioned from Plan to Build mode
+2025-12-11 | fef7583 | Saved progress at the end of the loop
+2025-12-11 | 1438900 | Add intelligence layer for proactive suggestions and AI-driven actions
+2025-12-11 | 1e0c318 | Transitioned from Plan to Build mode
+2025-12-11 | 7870fd5 | Add a conversational onboarding experience with interactive chat buttons
+2025-12-11 | 0f66c31 | Integrate onboarding flow directly into the chat interface
+2025-12-11 | ec07d26 | Transitioned from Plan to Build mode
+2025-12-11 | 896b247 | Saved progress at the end of the loop
+2025-12-11 | 6d663ad | Add conversational onboarding flow to guide new users
+2025-12-11 | 00db6fb | Transitioned from Plan to Build mode
+2025-12-11 | b285f56 | Saved progress at the end of the loop
+2025-12-11 | 88eb802 | Add ability to connect to and import from external project management tools
+2025-12-11 | 4837769 | Transitioned from Plan to Build mode
+2025-12-11 | ce07955 | Saved progress at the end of the loop
+2025-12-11 | bdcfe66 | Fix project access errors and comment display issues
+2025-12-11 | 2d9e602 | Transitioned from Plan to Build mode
+2025-12-11 | 0a011cf | Saved progress at the end of the loop
+2025-12-11 | 48f8ad4 | Update documentation to reflect recent improvements and features
+2025-12-11 | f685a05 | Improve access control for projects and tasks
+2025-12-11 | 6ff93d5 | Transitioned from Plan to Build mode
+2025-12-11 | 363c08c | Saved progress at the end of the loop
+2025-12-11 | 3b0d67f | Add threaded comments and replies to project and task views
+2025-12-11 | 808faaf | Add task comments and project notes with improved data testing
+2025-12-11 | 91e7750 | Add a new "brief" view for projects with notes and comments
+2025-12-11 | a52c5e0 | Transitioned from Plan to Build mode
+2025-12-10 | 8172a35 | Saved progress at the end of the loop
+2025-12-10 | c7009e0 | Enhance filter bars with collapsible functionality for better usability
+2025-12-10 | 075415f | Saved progress at the end of the loop
+2025-12-10 | 3bf358d | Add approval workflow for tasks and projects with v2 pipeline integration
+2025-12-10 | 5a35028 | Add approval workflows for task and project completion
+2025-12-10 | b753cfc | Add ability to approve or reject task and project completions
+2025-12-10 | 06a0cb6 | Saved progress at the end of the loop
+2025-12-10 | 7fc5904 | Add an optional approval workflow for task and project completion
+2025-12-10 | ca1a85c | Transitioned from Plan to Build mode
+2025-12-10 | 491f805 | Update authentication and team invite system with new security features
+2025-12-10 | 0c868cd | Enforce work email and role hierarchy for invitations and acceptance
+2025-12-10 | c176b84 | Saved progress at the end of the loop
+2025-12-10 | 1c1f73f | Improve authentication flow and error handling
+2025-12-10 | cf5dc5a | Add email verification functionality to the user registration process
+2025-12-10 | f97ff10 | Saved progress at the end of the loop
+2025-12-10 | 6bd5c77 | Add email and password authentication for user signups
+2025-12-10 | df757c7 | Saved progress at the end of the loop
+2025-12-10 | e091e20 | Add protected routes to restrict access to specific pages
+2025-12-10 | 13d403f | Saved progress at the end of the loop
+2025-12-10 | f4e1aa3 | Assign missing organisation IDs to existing projects
+2025-12-10 | 6977220 | Transitioned from Plan to Build mode
+2025-12-10 | beb1c25 | Enforce organization-based access control across project and task APIs
+2025-12-10 | 9bc0396 | Add user permission checks and enhance authentication flow
+2025-12-10 | 5a0b3cf | Add comprehensive organisation and invite management features
+2025-12-10 | 8bfed98 | Transitioned from Plan to Build mode
+2025-12-10 | 75827aa | Saved progress at the end of the loop
+2025-12-10 | 7c677da | Update user profile to use typed style preferences for agent communication
+2025-12-10 | 830673b | Transitioned from Plan to Build mode
+2025-12-10 | 5b87753 | Add documentation for a new conversational insights system
+2025-12-10 | dce0b20 | Add conversational capabilities for task insights and user guidance
+2025-12-10 | 94071e0 | Transitioned from Plan to Build mode
+2025-12-10 | 39cdf23 | Saved progress at the end of the loop
+2025-12-10 | 0d1c49c | Remove daily and weekly planning views and endpoints
+2025-12-10 | e1daf41 | Add AI-powered daily and weekly planning and confirmation features
+2025-12-10 | 34af467 | Transitioned from Plan to Build mode
+2025-12-10 | 1b1d56e | Saved progress at the end of the loop
+2025-12-10 | fc76908 | Add a planning protocol to ensure consistent feature development
+2025-12-10 | 293d158 | Transitioned from Plan to Build mode
+2025-12-10 | 29f7e9b | Analyze AI behavior and improve integration with system architecture
+2025-12-10 | c5d3cd1 | Saved progress at the end of the loop
+2025-12-10 | 2c3188c | Implement filtering for tasks and projects via chat commands
+2025-12-10 | c871213 | Transitioned from Plan to Build mode
+2025-12-09 | dc8dc3b | Add attribute-based filter system for projects and tasks
+2025-12-09 | 955c5a7 | Add filtering capabilities to projects and tasks
+2025-12-09 | db9e86c | Transitioned from Plan to Build mode
+2025-12-09 | 9db13f1 | Saved progress at the end of the loop
+2025-12-09 | 4214d4a | Restructure "All Tasks" page to display a flat list of tasks with project information
+2025-12-09 | a64d8d6 | Initiate new project creation without leaving the current page
+2025-12-09 | adad1dd | Transitioned from Plan to Build mode
+2025-12-09 | 8048c4f | Saved progress at the end of the loop
+2025-12-09 | aa6aa2d | Improve project display by managing description truncation and updating project details
+2025-12-09 | 2d5266a | Transitioned from Plan to Build mode
+2025-12-09 | b83c2b1 | Saved progress at the end of the loop
+2025-12-09 | 09ddb63 | Improve project display and attribute handling on the project manager page
+2025-12-09 | ba65b75 | Transitioned from Plan to Build mode
+2025-12-09 | cf74292 | Saved progress at the end of the loop
+2025-12-09 | 3d4cbf3 | Add project scope selection for automations and improve billing service integration
+2025-12-09 | edb0436 | Transitioned from Plan to Build mode
+2025-12-09 | da78d8b | Add automation scoping for cross-project functionality
+2025-12-09 | 640b74d | Transitioned from Plan to Build mode
+2025-12-09 | 73184e3 | Saved progress at the end of the loop
+2025-12-09 | fdf7276 | Saved progress at the end of the loop
+2025-12-09 | e8c9c0c | Improve logging utility to handle large data structures
+2025-12-09 | e6e932f | Improve logging and request tracking across the application
+2025-12-09 | 9d3966d | Add structured logging and request tracing to the chat pipeline
+2025-12-09 | 0b45a47 | Transitioned from Plan to Build mode
+2025-12-08 | 4fc0f6a | Saved progress at the end of the loop
+2025-12-08 | c137923 | Improve how automation conditions are handled for better task filtering
+2025-12-08 | 5811165 | Transitioned from Plan to Build mode
+2025-12-08 | acfa831 | Saved progress at the end of the loop
+2025-12-08 | 5f38f23 | Update project context handling for consistent data across operations
+2025-12-08 | 32f83fb | Transitioned from Plan to Build mode
+2025-12-08 | ff0c4dd | Saved progress at the end of the loop
+2025-12-08 | effeba8 | Improve project and task name matching accuracy
+2025-12-08 | efc8317 | Transitioned from Plan to Build mode
+2025-12-08 | 24d4030 | Saved progress at the end of the loop
+2025-12-08 | a4d6e4f | Add the ability to create and manage automated workflows within projects
+2025-12-07 | 761f4b1 | Improve navigation and project syncing across the application
+2025-12-07 | bde4f5b | Update project view synchronization logic to include project ID changes
+2025-12-07 | 8ed38eb | Update navigation logic to consistently handle project and view changes
+2025-12-07 | 9801cb9 | Improve navigation consistency and URL syncing for project views
+2025-12-07 | 87808af | Transitioned from Plan to Build mode
+2025-12-07 | 2fa59fd | Saved progress at the end of the loop
+2025-12-07 | 37dc3e5 | Improve multi-step navigation and task creation logic
+2025-12-07 | 6e92804 | Saved progress at the end of the loop
+2025-12-07 | 02f457e | Fix task clarification flow to prevent errors after clarification
+2025-12-07 | 61990b2 | Update clarification flow to correctly handle pending task information
+2025-12-07 | ce20804 | Add cross-project operations and global mode enhancements to chat
+2025-12-07 | e57df49 | Improve cross-project task management and task listing capabilities
+2025-12-07 | d4ccb7a | Saved progress at the end of the loop
+2025-12-07 | edaa878 | Saved progress at the end of the loop
+2025-12-07 | c7a6694 | Add ability to manage tasks and columns across multiple projects
+2025-12-07 | 356fff9 | Update pipeline to use V2 and improve task management
+2025-12-05 | a7200e8 | Saved progress at the end of the loop
+2025-12-05 | b20445f | Refine global mode check to rely on project ID only
+2025-12-05 | 4555d0f | Add safeguards to prevent project-specific actions when no project is selected
+2025-12-05 | d060cad | Enable conversational project management in global and scoped modes
+2025-12-05 | 5e246b0 | Saved progress at the end of the loop
+2025-12-05 | a2fafac | Integrate new chat pipeline for project management and navigation
+2025-12-05 | 60b6b20 | Introduce new optimized chat endpoint and refine clarification handling
+2025-12-05 | 1dc3645 | Transitioned from Plan to Build mode
+2025-12-05 | 11e145a | Saved progress at the end of the loop
+2025-12-05 | 17dcab5 | Improve how the application understands user navigation commands
+2025-12-05 | 247c1f7 | Transitioned from Plan to Build mode
+2025-12-05 | 97a800e | Saved your changes before starting work
+2025-12-05 | bb44924 | Saved progress at the end of the loop
+2025-12-05 | 50750f5 | Route all chat messages through the intent endpoint first
+2025-12-05 | abb7c18 | Transitioned from Plan to Build mode
+2025-12-05 | ef590ad | Add ability to open and switch between projects via chat commands
+2025-12-05 | 8c21669 | Improve handling of AI responses and streamline chat command execution
+2025-12-05 | 4f49776 | Saved progress at the end of the loop
+2025-12-05 | cfcc0b6 | Adjust routing for intent processing to ensure proper execution paths
+2025-12-05 | 61fc8cc | Add a new API endpoint to intelligently route user requests
+2025-12-05 | 8b05a6f | Add quick navigation between different views using natural language commands
+2025-12-05 | df58db5 | Introduce an intent-based routing system for efficient request handling
+2025-12-05 | edb4b3e | Saved progress at the end of the loop
+2025-12-05 | 606da18 | Add real-time streaming for AI responses and improve project creation flow
+2025-12-05 | 0d6cd8c | Transitioned from Plan to Build mode
+2025-12-05 | 45d1e9a | Saved progress at the end of the loop
+2025-12-05 | 21b40e8 | Improve navigation responsiveness by checking session state first
+2025-12-05 | c3fc822 | Transitioned from Plan to Build mode
+2025-12-05 | 2086281 | Saved progress at the end of the loop
+2025-12-05 | 429bfb3 | Enhance status indicators with context-aware processing stages and animations
+2025-12-05 | 7701f18 | Transitioned from Plan to Build mode
+2025-12-05 | 59d7221 | Saved progress at the end of the loop
+2025-12-05 | d2dd94c | Improve how the system understands user commands and intentions
+2025-12-05 | 77279f3 | Saved progress at the end of the loop
+2025-12-05 | 7ea2b59 | Improve chat handling by adding conversation history and a unified orchestrator
+2025-12-05 | 52d37c1 | Saved progress at the end of the loop
+2025-12-05 | 845223a | Improve how the system handles user requests for managing project columns
+2025-12-04 | 0ea1c2b | Saved progress at the end of the loop
+2025-12-04 | 22c2153 | Improve naming and fallback logic for Kanban column commands
+2025-12-04 | ce7dbd2 | Improve AI-powered naming for Kanban columns and task creation
+2025-12-04 | c517d09 | Transitioned from Plan to Build mode
+2025-12-04 | 21a5a65 | Saved progress at the end of the loop
+2025-12-04 | b34556b | Enable users to manage Kanban board columns through chat commands
+2025-12-04 | 6c16731 | Transitioned from Plan to Build mode
+2025-12-04 | e04249c | Arrange Kanban board columns horizontally with scrolling
+2025-12-04 | cbe5453 | Saved progress at the end of the loop
+2025-12-04 | 7a5ce89 | Update chat interface to refresh task views after modifications
+2025-12-04 | 81589ba | Transitioned from Plan to Build mode
+2025-12-04 | b92c5b6 | Saved progress at the end of the loop
+2025-12-04 | 35c5010 | Add ability to modify and manage tasks through chat commands
+2025-12-04 | 3d7d505 | Transitioned from Plan to Build mode
+2025-12-04 | 68dbca2 | Saved progress at the end of the loop
+2025-12-04 | 8ba4742 | Make follow-up questions in chat stand out visually
+2025-12-04 | 9ec3972 | Transitioned from Plan to Build mode
+2025-12-04 | e72f6ca | Saved progress at the end of the loop
+2025-12-04 | 956e74d | Enhance AI project manager with user profile memory and contextual follow-ups
+2025-12-04 | 856954b | Saved progress at the end of the loop
+2025-12-04 | 9d6f015 | Saved progress at the end of the loop
+2025-12-04 | a8e24ce | Refine task creation with practical criteria and guardrails
+2025-12-04 | 4e5d5e4 | Transitioned from Plan to Build mode
+2025-12-04 | 8724390 | Saved progress at the end of the loop
+2025-12-04 | 22933bf | Refine task generation to match project complexity and scope
+2025-12-04 | 8b8095a | Transitioned from Plan to Build mode
+2025-12-04 | df3096c | Saved progress at the end of the loop
+2025-12-04 | 1de1782 | Add timelines, milestones, and dependencies to project creation
+2025-12-04 | 3f8e265 | Transitioned from Plan to Build mode
+2025-12-04 | 28347fa | Saved progress at the end of the loop
+2025-12-04 | 74b1a28 | Add system to block out-of-scope requests from users
+2025-12-04 | b23a7af | Saved progress at the end of the loop
+2025-12-04 | 3f1ddea | Add guidance and help features for new users to understand the application
+2025-12-04 | e691409 | Saved progress at the end of the loop
+2025-12-04 | 811f767 | Restructure the projects page with a new layout and header
+2025-12-04 | b0a5f6f | Saved progress at the end of the loop
+2025-12-04 | cd639ec | Update project cards with modern design and progress tracking
+2025-12-04 | 92b6bd1 | Saved progress at the end of the loop
+2025-12-04 | 65160d9 | Update onboarding popup with correct branding and working close button
+2025-12-04 | 1a3371f | Transitioned from Plan to Build mode
+2025-12-04 | 7214361 | Apply Kyrox branding to the project management application
+2025-12-04 | a37c59b | Update project documentation to reflect new chat-based settings system
+2025-12-04 | e406a42 | Improve settings retrieval and recommendation actions with graceful error handling
+2025-12-04 | 500b857 | Add ability to manage account settings and integrations through chat
+2025-12-04 | e1ec5bd | Transitioned from Plan to Build mode
+2025-12-04 | cb97332 | Saved progress at the end of the loop
+2025-12-04 | 5ce21cc | Add ability to schedule meetings via conversational interface
+2025-12-04 | 9c0ff30 | Transitioned from Plan to Build mode
+2025-12-04 | 5ea5b2c | Saved progress at the end of the loop
+2025-12-04 | 51b1204 | Add meeting display to project timelines and differentiate weekends
+2025-12-04 | 95eb32a | Transitioned from Plan to Build mode
+2025-12-04 | 8cb3b15 | Saved progress at the end of the loop
+2025-12-04 | 4e6bab9 | Add chronological order, dependencies, and milestones to task creation
+2025-12-04 | a7fc41d | Transitioned from Plan to Build mode
+2025-12-04 | d3e5367 | Saved progress at the end of the loop
+2025-12-04 | 0f7b1bb | Transitioned from Plan to Build mode
+2025-12-04 | 0d7f06c | Saved progress at the end of the loop
+2025-12-04 | 28a2de1 | Add milestone functionality to the timeline view for project visualization
+2025-12-04 | 0c6eb10 | Improve timeline view to display task dependencies and milestones
+2025-12-04 | 01738d5 | Transitioned from Plan to Build mode
+2025-12-04 | 48bb6be | Saved progress at the end of the loop
+2025-12-04 | 2a65c33 | Fix overlapping task bars on the timeline view
+2025-12-04 | 8a73aa4 | Transitioned from Plan to Build mode
+2025-12-04 | 704ed91 | Saved progress at the end of the loop
+2025-12-04 | 3c193b2 | Update navigation menu to use brand colors for active state
+2025-12-04 | 7c2cda9 | Transitioned from Plan to Build mode
+2025-12-04 | 1e623f6 | Saved progress at the end of the loop
+2025-12-04 | ac45fed | Update brand colors for headings and app name
+2025-12-04 | c7c3128 | Transitioned from Plan to Build mode
+2025-12-04 | d32ba94 | Improve button appearance when disabled to maintain icon visibility
+2025-12-04 | e2d47d2 | Adjust color shade for primary foreground elements
+2025-12-04 | 426abe4 | Saved progress at the end of the loop
+2025-12-04 | 92f8531 | Update button icon color for better contrast
+2025-12-04 | a7e43c4 | Transitioned from Plan to Build mode
+2025-12-04 | c82e7e3 | Saved progress at the end of the loop
+2025-12-04 | 728234f | Improve dialog component to allow scrolling and proper centering
+2025-12-04 | 4f6d76d | Transitioned from Plan to Build mode
+2025-12-04 | acadcff | Saved progress at the end of the loop
+2025-12-04 | b87d5f2 | Fix dialog alignment to prevent content overflow on screen edges
+2025-12-04 | 584f798 | Saved progress at the end of the loop
+2025-12-04 | 7d4d0e4 | Add clipping to dialogs to prevent content overflow on display
+2025-12-04 | 00f1ef8 | Transitioned from Plan to Build mode
+2025-12-04 | 697690f | Saved progress at the end of the loop
+2025-12-04 | 224d899 | Fix dialogs from overflowing the screen edges
+2025-12-04 | 7f444c0 | Transitioned from Plan to Build mode
+2025-12-04 | 631691d | Saved progress at the end of the loop
+2025-12-04 | 51ffb8d | Update UI colors to use primary and destructive themes
+2025-12-04 | e39f01f | Update app colors to adhere to brand guidelines and improve consistency
+2025-12-04 | 6c554d0 | Improve chat interface alignment and brand color consistency
+2025-12-04 | b7822dc | Saved progress at the end of the loop
+2025-12-04 | 95a008d | Introduce onboarding and proactive recommendation features for new users
+2025-12-04 | 8e8269f | Update application styling to adhere to new brand guidelines
+2025-12-03 | 46142ea | Add onboarding and recommendation services for user guidance
+2025-12-03 | bf4a91d | Add onboarding and proactive recommendation features to enhance user experience
+2025-12-03 | 3fe4f5a | Saved progress at the end of the loop
+2025-12-03 | 1369720 | Add meeting tracking and management features to the project
+2025-12-02 | 34dd64e | Add meeting linking and awareness capabilities to the project manager
+2025-12-02 | 102da74 | Saved progress at the end of the loop
+2025-12-02 | 4d53052 | Add integrations layer for connecting with external project management and file storage tools
+2025-12-02 | ba9e1ac | Saved progress at the end of the loop
+2025-12-02 | 44a073c | Add billing and usage metering capabilities to the project manager
+2025-12-02 | 7ef2f37 | Add billing and usage metering system for automations
+2025-12-02 | 5616091 | Add system to manage feature capabilities and user limitations
+2025-12-02 | 9324fc8 | Add capability awareness to agents for clear communication of features
+2025-12-02 | 3e40914 | Document new security infrastructure for the project management application
+2025-12-02 | aa5f4af | Introduce an admin audit page with safety configuration controls
+2025-12-02 | 1dee831 | Implement comprehensive security hardening for the project management system
+2025-12-02 | c560efe | Add an AI-powered "Ask Why" feature for task explanations
+2025-12-02 | ad1b140 | Saved progress at the end of the loop
+2025-12-02 | 93daedd | Enhance optimization dialog and standardize data handling for automation executions
+2025-12-02 | 612ef91 | Add optimization suggestions and dialog for improving automation rules
+2025-12-02 | d48fe12 | Add system to provide automation insights and suggestions
+2025-12-02 | 65c0da8 | Add functionality to track automation executions and their statistics
+2025-12-02 | f4e7f57 | Add functionality to track automation rule executions and statistics
+2025-12-01 | b38288f | Saved progress at the end of the loop
+2025-12-01 | 2e76a96 | Add automation features allowing users to create event-driven rules
+2025-12-01 | 6d1faf6 | Add automations tab to the project manager interface
+2025-12-01 | 0b40890 | Add an automation engine to allow rules to react to events
+2025-12-01 | 3437d8e | Add internal automation engine for automatic task and project updates
+2025-12-01 | 9f6b919 | Add team management and project statistics features to the project manager
+2025-12-01 | d82b778 | Add ability to assign tasks and view project statistics
+2025-12-01 | 6a20969 | Add project statistics view and user management button to the interface
+2025-12-01 | a88278f | Add task assignment functionality to the project management interface
+2025-12-01 | f1bcb2c | Add user management and project assignment API endpoints and stats service
+2025-12-01 | cf5ea8a | Add user management and role capabilities to the project
+2025-12-01 | 2da647a | Add timeline view for visualizing project schedules and dependencies
+2025-12-01 | 5465c3e | Add timeline view for projects and agent interaction for scheduling
+2025-12-01 | 20b7c6b | Add custom Kanban columns with AI suggestions and improved dialog handling
+2025-12-01 | c0b3fea | Improve Kanban board column management and task syncing
+2025-12-01 | 1d78e2d | Allow AI to suggest custom Kanban board columns for projects
+2025-12-01 | f8f47f8 | Add customizable Kanban boards that adapt to different project needs
+2025-12-01 | 44bb8c2 | Add customizable Kanban board columns to projects
+2025-12-01 | 9cc7dab | Update documentation to reflect new task dependency features
+2025-12-01 | 35239f5 | Improve task dependency handling and cache invalidation across the application
+2025-12-01 | 5111881 | Add system to automatically unblock tasks and explain blockers
+2025-12-01 | 1cc1647 | Add a feature to report all blocked tasks and explain why tasks are blocked
+2025-12-01 | 9f99f1d | Display which tasks are blocking other tasks in the UI
+2025-12-01 | cbac5a1 | Add task dependency management and blocking features to the project
+2025-12-01 | ce8f433 | Update task dependency management to correctly handle API responses
+2025-12-01 | 697fe2c | Show blocked tasks on the Today and Week pages
+2025-12-01 | 7f8a9b0 | Add task dependency tracking and visualization to project management
+2025-12-01 | 5fadaaa | Add functionality to manage task dependencies and dependencies between tasks
+2025-12-01 | 6d8ff22 | Filter out blocked tasks when planning daily and weekly schedules
+2025-12-01 | 9506880 | Add API endpoints for managing task dependencies
+2025-12-01 | bed0fc0 | Add functionality to manage task dependencies and blocking states
+2025-12-01 | a3add95 | Saved progress at the end of the loop
+2025-12-01 | 4376123 | Add daily and weekly AI-powered planning features to the project manager
+2025-12-01 | 205489d | Add daily and weekly task views with navigation and planning capabilities
+2025-12-01 | e39c1c5 | Add daily and weekly planning features with dedicated views
+2025-12-01 | d330d24 | Show project descriptions and generate professional titles and descriptions for new projects
+2025-12-01 | 3d2e147 | Remove project prompt from user interface display
+2025-12-01 | efe3631 | Update task and project date handling to improve accuracy and prevent errors
+2025-12-01 | 878d9ba | Add start and end dates to projects and tasks for better planning
+2025-12-01 | b176108 | Saved progress at the end of the loop
+2025-12-01 | 1a8ac01 | Improve user experience and navigation across the application
+2025-12-01 | d84422e | Update routing to properly display projects based on URL parameters
+2025-12-01 | e6ce3d6 | Update project navigation to correctly display project manager
+2025-12-01 | c12af87 | Update projects page title to display correctly
+2025-12-01 | 1ad2740 | Restructure application layout and navigation for improved user experience
+2025-11-28 | a67e78a | Replace in-memory storage with a persistent database solution
+2025-11-28 | ffa5f2b | Add icon imports for project creation and navigation
+2025-11-28 | 5b6104b | Add button component to projects page to create new projects
+2025-11-28 | d0feda1 | Remove problematic "Project Details" button from views
+2025-11-26 | 047e875 | Add dedicated views for projects and all tasks with navigation
+2025-11-26 | 32bc8a3 | Fix project creation and display issues for users
+2025-11-26 | 48bb493 | Replace project selector with clickable buttons for easier navigation
+2025-11-26 | 36df4bc | Add a project selector dropdown to the header for easier project management
+2025-11-26 | 03fefcc | Add detailed logging to diagnose project creation and chat response issues
+2025-11-26 | 76ac815 | Enable chat input for project creation and interaction
+2025-11-26 | 74c4d32 | Add ability to create projects directly from chat descriptions
+2025-11-26 | 4abf967 | Add ability for chatbot to create projects from user descriptions
+2025-11-25 | 2cabb65 | Improve agent task scheduling and logging with detailed event data
+2025-11-25 | df349e8 | Add AI-powered project management features and improve agent orchestration
+2025-11-25 | 0eb0c58 | Add OpenAI integration for AI-powered features
+2025-11-25 | a3a368f | Extracted stack files
+2025-11-25 | b70f9b7 | Initial commit

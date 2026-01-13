@@ -1,0 +1,222 @@
+name: Regenerate Commit Metadata Logs
+
+# Manual trigger only - no automatic runs
+# Fetches ONLY commit metadata via GitHub API (dates, short hashes, subjects)
+# Does NOT clone repo, does NOT fetch diffs, does NOT include author emails or file paths
+on:
+  workflow_dispatch:
+
+jobs:
+  regenerate-logs:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout public repo
+        uses: actions/checkout@v4
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Create logs directory
+        run: mkdir -p logs
+        
+      - name: Fetch commit metadata from GitHub API
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 << 'EOF'
+          import requests
+          import os
+          from datetime import datetime
+          from collections import defaultdict
+          
+          # Target repository (private)
+          OWNER = "kyrox-systems-hq"
+          REPO = "Kyrox-PM-Staging"
+          
+          # GitHub API endpoint for commits
+          API_ENDPOINT = f"https://api.github.com/repos/{OWNER}/{REPO}/commits"
+          
+          def fetch_commits_metadata():
+              """
+              Fetch ONLY commit metadata from GitHub API:
+              - Commit date (author.date)
+              - Commit hash (sha, truncated to 7 chars)
+              - Commit subject (first line of message)
+              
+              Does NOT fetch:
+              - Source code
+              - File changes/diffs
+              - Author email addresses
+              - File paths or directory trees
+              - Any implementation details
+              """
+              headers = {}
+              token = os.environ.get('GITHUB_TOKEN')
+              if token:
+                  headers['Authorization'] = f'token {token}'
+              
+              all_commits = []
+              page = 1
+              per_page = 100
+              
+              print(f"🔍 Fetching commit metadata from {OWNER}/{REPO}")
+              print(f"📍 API Endpoint: {API_ENDPOINT}")
+              print(f"📦 Fields extracted: date, short_hash, subject only")
+              print()
+              
+              while True:
+                  params = {
+                      'page': page,
+                      'per_page': per_page,
+                      # No additional params to fetch file info
+                  }
+                  
+                  try:
+                      response = requests.get(API_ENDPOINT, headers=headers, params=params, timeout=10)
+                      
+                      if response.status_code == 404:
+                          print("❌ Error: Repository not found or not accessible")
+                          return None
+                      elif response.status_code == 401:
+                          print("❌ Error: Unauthorized (check GITHUB_TOKEN)")
+                          return None
+                      elif response.status_code != 200:
+                          print(f"❌ Error: {response.status_code}")
+                          print(response.text)
+                          return None
+                      
+                      commits = response.json()
+                      if not commits:
+                          break
+                      
+                      all_commits.extend(commits)
+                      print(f"  ✓ Page {page}: {len(commits)} commits (total: {len(all_commits)})")
+                      page += 1
+                  
+                  except Exception as e:
+                      print(f"❌ Error: {e}")
+                      return None
+              
+              print(f"\n✅ Total commits fetched: {len(all_commits)}")
+              return all_commits
+          
+          def generate_logs(commits):
+              """Generate log files from commit metadata"""
+              if not commits:
+                  print("❌ No commits to process")
+                  return False
+              
+              commits_log_lines = []
+              month_counts = defaultdict(int)
+              
+              for commit in commits:
+                  try:
+                      # Extract ONLY these fields
+                      commit_obj = commit.get('commit', {})
+                      author_obj = commit_obj.get('author', {})
+                      
+                      date_str = author_obj.get('date', '')        # ISO 8601 format
+                      commit_hash = commit.get('sha', '')          # Full SHA
+                      message = commit_obj.get('message', '')      # Full message
+                      
+                      # Parse and format
+                      if date_str and commit_hash and message:
+                          # Extract YYYY-MM-DD from ISO datetime
+                          date_obj = datetime.fromisoformat(date_str.replace('Z', '+00:00'))
+                          formatted_date = date_obj.strftime('%Y-%m-%d')
+                          
+                          # Extract short hash (7 chars)
+                          short_hash = commit_hash[:7]
+                          
+                          # Extract subject (first line only)
+                          subject = message.split('\n')[0].strip()
+                          
+                          # Track by month
+                          month_key = formatted_date[:7]  # YYYY-MM
+                          month_counts[month_key] += 1
+                          
+                          # Format: YYYY-MM-DD | <short_hash> | <subject>
+                          commits_log_lines.append(f"{formatted_date} | {short_hash} | {subject}")
+                  
+                  except Exception as e:
+                      print(f"⚠️  Warning: Could not parse commit: {e}")
+                      continue
+              
+              # Sort by date (most recent first)
+              commits_log_lines = sorted(commits_log_lines, reverse=True)
+              
+              # Write COMMITS.log
+              with open('logs/COMMITS.log', 'w') as f:
+                  f.write(f"# Commit metadata for {OWNER}/{REPO}\n")
+                  f.write(f"# Generated: {datetime.now().isoformat()}\n")
+                  f.write(f"# Format: YYYY-MM-DD | <short_hash> | <subject>\n")
+                  f.write(f"# Total commits: {len(commits_log_lines)}\n")
+                  f.write("#\n")
+                  for line in commits_log_lines:
+                      f.write(line + '\n')
+              
+              print(f"✅ Generated logs/COMMITS.log ({len(commits_log_lines)} commits)")
+              
+              # Write COMMITS_BY_MONTH.txt
+              with open('logs/COMMITS_BY_MONTH.txt', 'w') as f:
+                  f.write(f"# Monthly commit count for {OWNER}/{REPO}\n")
+                  f.write(f"# Generated: {datetime.now().isoformat()}\n")
+                  f.write(f"# Format: YYYY-MM : <count> commits\n")
+                  f.write("#\n")
+                  for month in sorted(month_counts.keys(), reverse=True):
+                      count = month_counts[month]
+                      f.write(f"{month} : {count} commits\n")
+              
+              print(f"✅ Generated logs/COMMITS_BY_MONTH.txt ({len(month_counts)} months)")
+              return True
+          
+          # Main execution
+          print("=" * 60)
+          print("COMMIT METADATA LOG GENERATOR (API-ONLY)")
+          print("=" * 60)
+          print()
+          
+          commits = fetch_commits_metadata()
+          
+          if commits:
+              print()
+              if generate_logs(commits):
+                  print()
+                  print("=" * 60)
+                  print("✅ SUCCESS: Logs generated from metadata only")
+                  print("=" * 60)
+              else:
+                  print("❌ FAILED: Could not generate logs")
+                  exit(1)
+          else:
+              print("❌ FAILED: Could not fetch commits")
+              exit(1)
+          EOF
+          
+      - name: Verify logs generated
+        run: |
+          echo "=== COMMITS.log (first 25 lines) ==="
+          head -25 logs/COMMITS.log
+          echo ""
+          echo "=== COMMITS_BY_MONTH.txt ==="
+          cat logs/COMMITS_BY_MONTH.txt
+          
+      - name: Commit and push updated logs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add logs/COMMITS.log logs/COMMITS_BY_MONTH.txt
+          
+          if git diff --cached --quiet; then
+            echo "ℹ️  No changes to commit"
+          else
+            git commit -m "chore: regenerate commit metadata logs from Kyrox-PM-Staging"
+            git push
+            echo "✅ Logs updated and pushed successfully"
+          fi
