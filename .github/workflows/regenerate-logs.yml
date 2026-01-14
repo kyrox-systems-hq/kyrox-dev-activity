@@ -5,6 +5,8 @@ name: Regenerate Commit Metadata Logs
 # Does NOT clone repo, does NOT fetch diffs, does NOT include author emails or file paths
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 2 * * 1"
 
 jobs:
   regenerate-logs:
@@ -30,8 +32,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           python3 << 'EOF'
-          import requests
+          import json
           import os
+          import urllib.error
+          import urllib.parse
+          import urllib.request
           from datetime import datetime
           from collections import defaultdict
           
@@ -78,20 +83,24 @@ jobs:
                   }
                   
                   try:
-                      response = requests.get(API_ENDPOINT, headers=headers, params=params, timeout=10)
-                      
-                      if response.status_code == 404:
+                      url = f"{API_ENDPOINT}?{urllib.parse.urlencode(params)}"
+                      request = urllib.request.Request(url, headers=headers, method="GET")
+                      with urllib.request.urlopen(request, timeout=10) as response:
+                          status_code = response.getcode()
+                          body = response.read().decode("utf-8")
+
+                      if status_code == 404:
                           print("❌ Error: Repository not found or not accessible")
                           return None
-                      elif response.status_code == 401:
+                      elif status_code == 401:
                           print("❌ Error: Unauthorized (check GITHUB_TOKEN)")
                           return None
-                      elif response.status_code != 200:
-                          print(f"❌ Error: {response.status_code}")
-                          print(response.text)
+                      elif status_code != 200:
+                          print(f"❌ Error: {status_code}")
+                          print(body)
                           return None
-                      
-                      commits = response.json()
+
+                      commits = json.loads(body)
                       if not commits:
                           break
                       
@@ -99,6 +108,18 @@ jobs:
                       print(f"  ✓ Page {page}: {len(commits)} commits (total: {len(all_commits)})")
                       page += 1
                   
+                  except urllib.error.HTTPError as e:
+                      status_code = e.code
+                      error_body = e.read().decode("utf-8")
+                      if status_code == 404:
+                          print("❌ Error: Repository not found or not accessible")
+                          return None
+                      elif status_code == 401:
+                          print("❌ Error: Unauthorized (check GITHUB_TOKEN)")
+                          return None
+                      print(f"❌ Error: {status_code}")
+                      print(error_body)
+                      return None
                   except Exception as e:
                       print(f"❌ Error: {e}")
                       return None
