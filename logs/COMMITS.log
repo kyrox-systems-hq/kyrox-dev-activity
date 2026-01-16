@@ -1,8 +1,11 @@
 # Commit metadata for kyrox-systems-hq/Kyrox-PM-Staging
-# Generated: 2026-01-15T03:41:59.024123
+# Generated: 2026-01-16T03:40:19.933030
 # Format: YYYY-MM-DD | <short_hash> | <subject>
-# Total commits: 556
+# Total commits: 559
 #
+2026-01-15 | 959152a | Replace landing header text with logo (#77)
+2026-01-15 | 52ab85d | Add landing logo assets (#76)
+2026-01-15 | 2ab0c3f | Finalise landing, legal pages, public links, and pre-merge documentary reconciliation (#75)
 2026-01-14 | 5c7223d | Update landing infra documentation (#72)
 2026-01-14 | 0619ba6 | Update landing DNS and OAC documentation (#73)
 2026-01-13 | f9eea2f | Fix landing privacy and terms links (#70)
