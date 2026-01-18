@@ -1,8 +1,13 @@
 # Commit metadata for kyrox-systems-hq/Kyrox-PM-Staging
-# Generated: 2026-01-17T03:23:15.220274
+# Generated: 2026-01-18T03:46:59.793371
 # Format: YYYY-MM-DD | <short_hash> | <subject>
-# Total commits: 560
+# Total commits: 565
 #
+2026-01-17 | fc96ed9 | Add Codex prompt rules to context capsule (#81)
+2026-01-17 | 8fdb25c | Minor documentation update
+2026-01-17 | 6abfabd | Add Microsoft Entra association file for landing (#82)
+2026-01-17 | 3d173d5 | Align landing styling with app (#79)
+2026-01-17 | 3ab1e62 | Align landing theme tokens with app (#80)
 2026-01-16 | c870ee8 | Fix landing logo asset paths (#78)
 2026-01-15 | 959152a | Replace landing header text with logo (#77)
 2026-01-15 | 52ab85d | Add landing logo assets (#76)
