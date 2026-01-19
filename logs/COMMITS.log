@@ -1,8 +1,10 @@
 # Commit metadata for kyrox-systems-hq/Kyrox-PM-Staging
-# Generated: 2026-01-18T03:46:59.793371
+# Generated: 2026-01-19T03:51:14.712165
 # Format: YYYY-MM-DD | <short_hash> | <subject>
-# Total commits: 565
+# Total commits: 567
 #
+2026-01-18 | bfd00cf | Add EB predeploy build hook (#84)
+2026-01-18 | 4ffaff9 | Document AWS staging environment and pipeline (#83)
 2026-01-17 | fc96ed9 | Add Codex prompt rules to context capsule (#81)
 2026-01-17 | 8fdb25c | Minor documentation update
 2026-01-17 | 6abfabd | Add Microsoft Entra association file for landing (#82)
