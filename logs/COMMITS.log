@@ -1,8 +1,17 @@
 # Commit metadata for kyrox-systems-hq/Kyrox-PM-Staging
-# Generated: 2026-01-19T03:51:14.712165
+# Generated: 2026-01-20T03:44:37.089833
 # Format: YYYY-MM-DD | <short_hash> | <subject>
-# Total commits: 567
+# Total commits: 576
 #
+2026-01-19 | fb1fe52 | Staging: prebuilt GitHub Actions deploy + Procfile (remove EB on-instance build) (#86)
+2026-01-19 | cfe1a02 | AWS boot fix: Replit Auth gating (#90)
+2026-01-19 | c894364 | Fix session cookie issuance behind TLS-terminating proxy (#91)
+2026-01-19 | c66b284 | Docs: align staging deploy documentation with GitHub Actions OIDC artifact flow (#87)
+2026-01-19 | c2a0e28 | chore: no-op change to trigger staging deploy (#93)
+2026-01-19 | 95aa757 | Gate staging EB updates and serialize deploys (#88)
+2026-01-19 | 760ae05 | Harden EB predeploy hook for omit-dev installs (#85)
+2026-01-19 | 4fdd31b | Fix GitHub Actions triggers: app and landing build independently (#92)
+2026-01-19 | 1008dce | Fix env state read in staging deploy workflow (#89)
 2026-01-18 | bfd00cf | Add EB predeploy build hook (#84)
 2026-01-18 | 4ffaff9 | Document AWS staging environment and pipeline (#83)
 2026-01-17 | fc96ed9 | Add Codex prompt rules to context capsule (#81)
