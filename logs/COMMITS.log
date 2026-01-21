@@ -1,8 +1,11 @@
 # Commit metadata for kyrox-systems-hq/Kyrox-PM-Staging
-# Generated: 2026-01-20T03:44:37.089833
+# Generated: 2026-01-21T03:44:45.395935
 # Format: YYYY-MM-DD | <short_hash> | <subject>
-# Total commits: 576
+# Total commits: 579
 #
+2026-01-20 | ecb2ea6 | Restore backlog immutability and reclassify follow-ons (#95)
+2026-01-20 | 95150d0 | Staging observability mode + org-safety test stabilisation (#94)
+2026-01-20 | 0f755bf | Minor doc updates
 2026-01-19 | fb1fe52 | Staging: prebuilt GitHub Actions deploy + Procfile (remove EB on-instance build) (#86)
 2026-01-19 | cfe1a02 | AWS boot fix: Replit Auth gating (#90)
 2026-01-19 | c894364 | Fix session cookie issuance behind TLS-terminating proxy (#91)
