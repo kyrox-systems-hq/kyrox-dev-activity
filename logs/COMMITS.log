@@ -1,8 +1,17 @@
 # Commit metadata for kyrox-systems-hq/Kyrox-PM-Staging
-# Generated: 2026-01-24T03:27:23.535364
+# Generated: 2026-01-25T03:54:54.744199
 # Format: YYYY-MM-DD | <short_hash> | <subject>
-# Total commits: 579
+# Total commits: 589
 #
+2026-01-25 | ff50bd5 | Add /api/me/organisations endpoint (#99)
+2026-01-25 | d41bd26 | Fix org-scope test DBStorage mocking (#100)
+2026-01-25 | b92f18d | Add org header propagation in client requests (#101)
+2026-01-24 | b5d309e | Fix white screen bug and enhance organization isolation in storage
+2026-01-24 | 7b68e72 | Enforce organization ID for all project-related data entries
+2026-01-24 | 5a02ebe | Transitioned from Plan to Build mode
+2026-01-24 | 3f76ad7 | Harden auth guard rendering during redirects (#98)
+2026-01-24 | 0c76173 | Transitioned from Plan to Build mode
+2026-01-24 | 0503dfc | Add organization ID to all chat-driven operations for tenant isolation
 2026-01-20 | ecb2ea6 | Restore backlog immutability and reclassify follow-ons (#95)
 2026-01-20 | 95150d0 | Staging observability mode + org-safety test stabilisation (#94)
 2026-01-20 | 0f755bf | Minor doc updates
@@ -17,6 +26,7 @@
 2026-01-19 | 1008dce | Fix env state read in staging deploy workflow (#89)
 2026-01-18 | bfd00cf | Add EB predeploy build hook (#84)
 2026-01-18 | 4ffaff9 | Document AWS staging environment and pipeline (#83)
+2026-01-18 | 4d032cc | Transitioned from Plan to Build mode
 2026-01-17 | fc96ed9 | Add Codex prompt rules to context capsule (#81)
 2026-01-17 | 8fdb25c | Minor documentation update
 2026-01-17 | 6abfabd | Add Microsoft Entra association file for landing (#82)
