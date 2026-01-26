@@ -1,11 +1,14 @@
 # Commit metadata for kyrox-systems-hq/Kyrox-PM-Staging
-# Generated: 2026-01-25T03:54:54.744199
+# Generated: 2026-01-26T03:58:02.670229
 # Format: YYYY-MM-DD | <short_hash> | <subject>
-# Total commits: 589
+# Total commits: 592
 #
 2026-01-25 | ff50bd5 | Add /api/me/organisations endpoint (#99)
 2026-01-25 | d41bd26 | Fix org-scope test DBStorage mocking (#100)
+2026-01-25 | c6b3a55 | Minor doc update
 2026-01-25 | b92f18d | Add org header propagation in client requests (#101)
+2026-01-25 | 5e85043 | Reconcile routing, navigation, org invariants, and guard loading UX (Findings 1–6)  (#103)
+2026-01-25 | 185fc7a | Persist active organisation selection in session and resolve org from session/header/query (#102)
 2026-01-24 | b5d309e | Fix white screen bug and enhance organization isolation in storage
 2026-01-24 | 7b68e72 | Enforce organization ID for all project-related data entries
 2026-01-24 | 5a02ebe | Transitioned from Plan to Build mode
