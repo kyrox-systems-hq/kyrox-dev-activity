@@ -1,8 +1,13 @@
 # Commit metadata for kyrox-systems-hq/Kyrox-PM-Staging
-# Generated: 2026-01-26T03:58:02.670229
+# Generated: 2026-01-27T03:48:52.855767
 # Format: YYYY-MM-DD | <short_hash> | <subject>
-# Total commits: 592
+# Total commits: 597
 #
+2026-01-26 | b3e62a8 | Fix task deep-links, admin access UX, and first-user admin assignment (#111)
+2026-01-26 | 72dfc8f | Remove redundant Projects navigation history mutation (#106)
+2026-01-26 | 664cf8a | Reconcile routing docs after data router rebuild (#109)
+2026-01-26 | 4319eef | Rebuild client routing with React Router v6 data router (#108)
+2026-01-26 | 37fba25 | Defer browser router creation to runtime (#110)
 2026-01-25 | ff50bd5 | Add /api/me/organisations endpoint (#99)
 2026-01-25 | d41bd26 | Fix org-scope test DBStorage mocking (#100)
 2026-01-25 | c6b3a55 | Minor doc update
